@@ -1,0 +1,112 @@
+1. Introduction
+
+Why this project (tour guide/blog on South Korea)?
+
+Relevance: many young people (20–30) are interested in K-pop, Korean food, and travel.
+
+Research question/thesis: Which text types are best suited for a digital platform that introduces places, food, and culture of South Korea?
+
+You should write this yourselves:
+
+Your motivation (Why South Korea? Personal interests? Inspiration?)
+
+How you came up with the idea of creating your own website.
+
+2. Text Types and Their Characteristics
+2.1 Travel Guide
+
+Purpose: to provide information, orientation, and practical advice.
+
+Structure: places, sights, routes, maps.
+
+Language: factual, clear, concise.
+
+Features: facts, addresses, opening hours, background knowledge.
+
+Audience: travelers who need practical preparation.
+
+2.2 Blog
+
+Purpose: to share personal experiences, impressions, and inspiration.
+
+Structure: narrative, episodic, often with images and storytelling.
+
+Language: subjective, lively, emotional.
+
+Features: authenticity, personality, interaction with readers.
+
+Audience: internet-savvy people who want to be inspired.
+
+2.3 Glossary
+
+Purpose: to explain terms, improve understanding, and make culture accessible.
+
+Structure: alphabetical, short, precise.
+
+Language: neutral, explanatory, definition-style.
+
+Features: helps readers understand cultural terms.
+
+Audience: people who encounter unfamiliar words.
+
+👉 You should add your own examples: Which terms you want to include in the glossary (e.g., Hanbok, Bibimbap, K-Drama, Kimchi).
+
+3. Website Structure and Justification
+
+Combination of text types: Travel guide (facts), Blog (emotions), Glossary (understanding).
+
+Why this structure makes sense: It appeals to both information-seekers and culture/inspiration-seekers.
+
+Logical flow: Homepage → Blog entries (as an engaging entry point) → Subpages (Food, Places, Culture) → Glossary as a support tool.
+
+👉 You should add: Your planned menu structure, categories, and subpages.
+
+4. Differences and Comparison of the Text Types
+
+Travel Guide: objective, fact-based.
+
+Blog: subjective, storytelling.
+
+Glossary: short, precise, lexicon-like.
+
+Comparison: They complement each other and create a well-rounded resource.
+
+For your website: Blog = personal touch, Travel Guide = orientation, Glossary = deeper understanding.
+
+5. Direction of the Work / Implementation
+
+Target group: 20–30 years old, tech-savvy, interested in South Korea, travel, and culture.
+
+Language style: informative, but modern and engaging. Mix of factual info (travel guide) and personal tone (blog).
+
+Website implementation: simple navigation, strong visuals (images, videos), maybe interactive maps, glossary terms linked in articles.
+
+Theoretical basis: digital text types differ from print (hyperlinks, multimedia, interactivity).
+
+👉 You should add: Which tools/platforms you want to use (WordPress, Wix, Squarespace, coding).
+
+6. Conclusion
+
+Summary: Each text type offers a different perspective.
+
+Justification: The combination creates added value for readers.
+
+Perspective: Possibility to expand (more cities, more food categories, interviews, etc.).
+
+Footnotes / Sources
+
+Smart-Guide: Write an Engaging Digital Travel Guide – Best Writing Style Tips for Content Authors (2024).
+
+Masterclass: Travel Writing Guide (2024).
+
+(Optional: academic sources on text types or digital media theory if you want to add more depth).
+
+Extra Suggestions for Your Project
+
+Tone & Style: friendly, modern, authentic, not too academic.
+
+Form: combine blog entries with fact boxes + glossary links.
+
+Content ideas: “Top 5 Street Foods in Seoul,” “Cultural Etiquette Guide,” “Personal Blog Entry: Visiting a Korean Temple,” Glossary for Korean words.
+
+Language level: not too formal, but not slangy. Use simple, clear English with some Korean terms (explained in glossary).
