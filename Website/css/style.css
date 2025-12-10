@@ -1,0 +1,73 @@
+/* General Fonts & Body */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px; /* Offset for fixed navbar */
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar Polish */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #000 !important;
+}
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+}
+.nav-link.active {
+    color: #d63384 !important; /* Active page highlight color */
+    font-weight: 700;
+}
+
+/* The "Wikipedia" Link Style */
+.wiki-term {
+    color: #d63384; 
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+    cursor: help;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+.wiki-term:hover {
+    background-color: rgba(214, 51, 132, 0.1);
+    color: #a01d5d;
+}
+
+/* Custom Popover Styling (Matching your diagram) */
+.custom-popover {
+    border: 2px solid #333;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.2); /* Retro shadow style */
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.popover-header {
+    background-color: #333 !important;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+}
+
+.popover-body-custom {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 10px;
+}
+
+/* Card Hover Effects (For Glossary) */
+.hover-effect {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
