@@ -33,6 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
         "Bibimbap": {
             title: "Bibimbap",
             content: "Mixed rice with vegetables and meat."
+        },
+        "Myeongdong Cathedral":{
+            title: "Myeong-dong Cathedral",
+            content: "Myeong-dong Cathedral, is Korea’s first large brick church built in the Gothic style, completed in 1898 and a central symbol of the Catholic Church in Korea. The cathedral stands on the historic site of early Korean Catholic community activity, houses relics of persecuted martyrs, and has long been a spiritual and cultural landmark in Seoul."
         }
     };
 

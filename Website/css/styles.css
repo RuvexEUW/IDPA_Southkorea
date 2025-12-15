@@ -10,6 +10,20 @@ h1, h2, h3, h4, h5, .navbar-brand {
     font-family: 'Playfair Display', serif;
 }
 
+h4 {
+    font-style: italic;
+}
+
+a {
+    color: #d63384; /* This is your pink color */
+    text-decoration: none; /* Removes the underline (optional) */
+}
+
+a:hover {
+    color: #a01d5d; /* Darker pink */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
 /* Navbar Polish */
 .navbar-brand {
     font-size: 1.5rem;
@@ -20,13 +34,13 @@ h1, h2, h3, h4, h5, .navbar-brand {
     color: #555 !important;
 }
 .nav-link.active {
-    color: #d63384 !important; /* Active page highlight color */
+    color: #098648 !important; 
     font-weight: 700;
 }
 
 /* The "Wikipedia" Link Style */
 .wiki-term {
-    color: #d63384; 
+    color: #098648; 
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 2px;
@@ -37,7 +51,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
 
 .wiki-term:hover {
     background-color: rgba(214, 51, 132, 0.1);
-    color: #a01d5d;
+    color: #023b1f;
 }
 
 /* Custom Popover Styling (Matching your diagram) */
