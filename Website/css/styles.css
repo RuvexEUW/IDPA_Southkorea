@@ -15,13 +15,13 @@ h4 {
 }
 
 a {
-    color: #d63384; /* This is your pink color */
-    text-decoration: none; /* Removes the underline (optional) */
+    color: #0047A0;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #a01d5d; /* Darker pink */
-    text-decoration: underline; /* Adds underline on hover */
+    color: #032349;
+    text-decoration: underline;
 }
 
 /* Navbar Polish */
@@ -34,13 +34,13 @@ a:hover {
     color: #555 !important;
 }
 .nav-link.active {
-    color: #098648 !important; 
+    color: #CD2E3A !important; 
     font-weight: 700;
 }
 
 /* The "Wikipedia" Link Style */
 .wiki-term {
-    color: #098648; 
+    color: #CD2E3A; 
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 2px;
@@ -51,7 +51,7 @@ a:hover {
 
 .wiki-term:hover {
     background-color: rgba(214, 51, 132, 0.1);
-    color: #023b1f;
+    color: #6e0912;
 }
 
 /* Custom Popover Styling (Matching your diagram) */
@@ -84,4 +84,51 @@ a:hover {
 .hover-effect:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Zoom effect for images */
+.hover-zoom {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.03);
+    z-index: 10;
+}
+
+/* Custom Thick Separator */
+.hr-thick {
+    height: 5px;
+    background-color: #CD2E3A;
+    border: none;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+/* --- Custom Blue Buttons --- */
+.btn-custom-blue {
+    background-color: #0047A0;
+    border-color: #0047A0;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-blue:hover {
+    background-color: #032349; 
+    border-color: #032349;
+    color: white;
+}
+
+.btn-outline-custom-blue {
+    color: #0047A0;
+    border-color: #0047A0;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom-blue:hover {
+    background-color: #032349; 
+    border-color: #032349;
+    color: white;
 }
