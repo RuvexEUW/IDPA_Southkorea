@@ -1,0 +1,29 @@
+Geschichte:
+In Dokumentation Historische Fakten
+Zitieren
+Fussnote
+Quelle
+Link + Aufruf der Website(Timestamp)
+
+
+Epoche-Dokumentation:
+Etwa 2-3 Seiten pro Epoche
+
+
+ 
+Dokumentation:
+Alle enstcheidungen müssen in der Dokumentation begründet werden
+Theoreteisch überlegen und in Dokumentation erwähnen, was in der Zukunft getan werden soll. (Verlag oder Touristenbüro anschreiben für Verwendung).
+Was unterscheidet unser Blog von anderen, und was ist typisch für unseren Website. Plus wie und warum erreichen wir unser Zielpublikum. USP
+Quellen: von Fotos und Links
+Alle Gedanken Dokumentieren
+Protokoll ausfüllen
+Proof-reading
+
+
+Website:
+Hyperlink drauf drücken -> Man wird auf Quellenseite geleitet
+Immer Timestamp angegeben, wann was benutzt wurde. Und informationen mit Links, also z.b Hyperlink information einen Link zu weiteren Informationsquellen. Sammeln der Information, in einem Mouse hover. (Travelguide, Historische Fakten, Blog)
+Fotoquelle: Eigenproduktion
+About Us tab
+Blog: Sehr viel scrollen shortcuts (Introduction, Seoul, Gyeongju, Busan, jeonju, Final toughts)
