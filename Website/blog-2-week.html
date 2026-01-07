@@ -15,11 +15,11 @@
         html {
             scroll-behavior: smooth;
         }
-        /* Jedes Element mit einer ID bekommt einen Abstand nach oben beim Springen */
+        /* Offset for anchor jumping so headers aren't hidden */
         :target {
             scroll-margin-top: 100px;
         }
-        /* Styling für die Sidebar Links */
+        /* Sidebar Link Styling */
         .sidebar-link {
             color: #555;
             padding: 8px 0;
@@ -30,9 +30,20 @@
             text-decoration: none;
         }
         .sidebar-link:hover {
-            color: #d63384; /* Deine Pink-Farbe */
+            color: #d63384; /* Your Pink Theme Color */
             border-left: 2px solid #d63384;
             background-color: #f8f9fa;
+        }
+        /* WIKI TERM STYLING (Red Hyperlinks) */
+        .wiki-term {
+            color: #dc3545; /* Bootstrap Red */
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .wiki-term:hover {
+            color: #a71d2a; /* Darker Red on Hover */
         }
     </style>
 </head>
@@ -99,8 +110,8 @@
                             This spring, I finally spent <strong>two unforgettable</strong> weeks traveling through the
                             country with a friend
                             —
-                            from <span class="wiki-term" data-term="Seoul">Seoul</span>’s bustling neighbourhoods to <span class="wiki-term" data-term="Gyeongju">Gyeongju</span>’s historic treasures, Busan’s coastal charm,
-                            and <span class="wiki-term" data-term="Jeonju">Jeonju</span>’s traditional beauty.
+                            from Seoul’s bustling neighbourhoods to Gyeongju’s historic treasures, Busan’s coastal charm,
+                            and Jeonju’s traditional beauty.
                         </p>
                         <p>
                             This blog tells the story of that trip:
@@ -124,7 +135,7 @@
                             You can:
                         </p>
                         <ul>
-                            <li><strong>Follow the full two-week route </strong>(<span class="wiki-term" data-term="Seoul">Seoul</span> → <span class="wiki-term" data-term="Gyeongju">Gyeongju</span> → Busan → <span class="wiki-term" data-term="Jeonju">Jeonju</span> → Seoul)
+                            <li><strong>Follow the full two-week route </strong>(Seoul → Gyeongju → Busan → Jeonju → Seoul)
                             </li>
                             <li><strong>Pick single cities</strong> (e.g. just Busan or just Jeonju) and use the relevant
                                 days</li>
@@ -144,10 +155,10 @@
 
                         <h4 class="mt-5">Rough structure:</h4>
                         <ul>
-                            <li><strong>Days 1-5:</strong> <span class="wiki-term" data-term="Seoul">Seoul</span> (Insadong, Myeongdong, Hongdae, Gangnam, Seongsu)</li>
-                            <li><strong>Days 6-7:</strong> <span class="wiki-term" data-term="Gyeongju">Gyeongju</span> (history + temples)</li>
+                            <li><strong>Days 1-5:</strong> Seoul (Insadong, Myeongdong, Hongdae, Gangnam, Seongsu)</li>
+                            <li><strong>Days 6-7:</strong> Gyeongju (history + temples)</li>
                             <li><strong>Days 8-9:</strong> Busan (coastlines + culture)</li>
-                            <li><strong>Days 10-11:</strong> <span class="wiki-term" data-term="Jeonju">Jeonju</span> (hanok & food)</li>
+                            <li><strong>Days 10-11:</strong> Jeonju (hanok & food)</li>
                             <li><strong>Days 12-13:</strong> Seoul again (Hongdae & quiet corners)</li>
                             <li><strong>Day 14:</strong> Departure</li>
                         </ul>
@@ -178,7 +189,7 @@
 
                         <h4 class="mt-5">Transportation:</h4>
                         <p>
-                            I recommend buying a <strong><span class="wiki-term" data-term="T-Money">T-Money</span> card</strong> at the start of your trip.
+                            I recommend buying a <strong>T-Money card</strong> at the start of your trip.
                             It works for almost all buses and metros, and you can get one in most convenience stores.
                             If you need to catch a bullet train (KTX) from Seoul to Busan, the best option is to go to the
                             station one day before your trip and buy the ticket at the counter. <br>
@@ -200,7 +211,7 @@
                         <hr class="my-5 hr-thick">
 
 
-                        <h3 class="mt-5" id="seoul">Day 1: Arriving in <span class="wiki-term" data-term="Seoul">Seoul</span></h3>
+                        <h3 class="mt-5" id="seoul">Day 1: Arriving in Seoul</h3>
                         <p>
                             We landed at <strong>Seoul Incheon Airport</strong> around 2 p.m. and caught a train to our
                             hotel in <strong>Insadong</strong>, a very central area of Seoul that is still relatively quiet.
@@ -244,7 +255,7 @@
 
                         <h3 class="mt-5">Day 2: Palaces and Hanok Villages</h3>
                         <p>
-                            We started the morning exploring <strong>Bukchon <span class="wiki-term" data-term="Hanok">Hanok</span> Village</strong>, a neighbourhood full of
+                            We started the morning exploring <strong>Bukchon Hanok Village</strong>, a neighbourhood full of
                             traditional Korean houses between <strong><span class="wiki-term" data-term="Gyeongbokgung Palace">Gyeongbokgung</span></strong> and
                             <strong><span class="wiki-term" data-term="Changdeokgung Palace">Changdeokgung</span></strong> Palaces.
                             Walking there felt like time-travel — from modern streets to old alleys and tiled roofs.<br>
@@ -277,7 +288,7 @@
                             <ul>
                                 <li>Visit <strong><span class="wiki-term" data-term="Gyeongbokgung Palace">Gyeongbokgung</span></strong> and <strong><span class="wiki-term" data-term="Changdeokgung Palace">Changdeokgung Palaces</span></strong>
                                     (must-sees for first-time visitors)</li>
-                                <li>Walk through <strong>Bukchon <span class="wiki-term" data-term="Hanok">Hanok</span> Village</strong></li>
+                                <li>Walk through <strong>Bukchon Hanok Village</strong></li>
                                 <li>Experience Korean gaming culture at <strong>T1 Basecamp in Hongdae</strong></li>
                             </ul>
                             <strong>🍜 Where to eat:</strong><br>
@@ -451,9 +462,9 @@
                         </div>
 
 
-                        <h3 class="mt-5" id="gyeongju">Day 6: History Comes Alive in <span class="wiki-term" data-term="Gyeongju">Gyeongju</span></h3>
+                        <h3 class="mt-5" id="gyeongju">Day 6: History Comes Alive in Gyeongju</h3>
                         <p>
-                            Early in the morning, we took the train to <strong><span class="wiki-term" data-term="Gyeongju">Gyeongju</span></strong>, often called Korea’s
+                            Early in the morning, we took the train to <strong>Gyeongju</strong>, often called Korea’s
                             “museum without walls.” The city is full of historical treasures.<br>
                             We began at the <strong><span class="wiki-term" data-term="Gyeongju National Museum">Gyeongju National Museum</span></strong>, which presents Korea’s history from
                             the Bronze Age to the Unified Silla period, displaying ancient artifacts, statues, and massive
@@ -604,7 +615,7 @@
                         </p>
                         <p>
                             In the evening, we returned to our district and had dinner at a traditional restaurant, where we
-                            enjoyed a comforting <span class="wiki-term" data-term="Kimchi">kimchi</span> stew.
+                            enjoyed a comforting kimchi stew.
                         </p>
 
                         <div class="alert alert-light border-start border-4 border-dark">
@@ -706,9 +717,9 @@
                         </div>
 
 
-                        <h3 class="mt-5" id="jeonju">Day 10: <span class="wiki-term" data-term="Jeonju">Jeonju</span>’s <span class="wiki-term" data-term="Hanok">Hanok</span> Beauty</h3>
+                        <h3 class="mt-5" id="jeonju">Day 10: Jeonju’s Hanok Beauty</h3>
                         <p>
-                            The next morning, we took the train to <strong><span class="wiki-term" data-term="Jeonju">Jeonju</span></strong>, which took about two hours since
+                            The next morning, we took the train to <strong>Jeonju</strong>, which took about two hours since
                             there is no direct connection from Busan.
                             Jeonju is famous for its <strong><span class="wiki-term" data-term="Jeonju Hanok Village">Hanok Village</span></strong> and rich food culture, so we were
                             excited to explore.
@@ -722,7 +733,7 @@
                         <p>
                             In the afternoon, we visited <strong><span class="wiki-term" data-term="Jeondong Cathedral">Jeondong Cathedral</span></strong> and <strong>Nambu
                                 Market</strong>, then wandered through streets filled with people wearing traditional
-                            <span class="wiki-term" data-term="Hanbok">hanbok</span>, which gave the whole area a lively and festive feeling.
+                            hanbok, which gave the whole area a lively and festive feeling.
                         </p>
                         <p>
                             For dinner, we chose a small, very traditional family-run restaurant. It was just a father,
@@ -977,7 +988,7 @@
                         <p>
                             Still, we somehow reached the gate with only five minutes left before boarding.
                             Completely out of breath and sweating, we collapsed into our seats as the plane took off.
-                            Watching <span class="wiki-term" data-term="Seoul">Seoul</span> shrink beneath the clouds, it hit me how much these two weeks meant.
+                            Watching Seoul shrink beneath the clouds, it hit me how much these two weeks meant.
                         </p>
                         <p>
                             South Korea isn’t just a place you visit — it’s a place that stays with you.
