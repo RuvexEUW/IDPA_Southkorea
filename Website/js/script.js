@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // 1. GLOSSARY DATA
+    // 1. history facts
     const glossaryData = {
-// --- SEOUL LOCATIONS (From Doc) ---
+// --- SEOUL LOCATIONS ---
         "Myeongdong Cathedral": {
             title: "Myeongdong Cathedral",
             content: "Myeong-dong Cathedral, is Korea’s first large brick church built in the Gothic style, completed in 1898 and a central symbol of the Catholic Church in Korea. The cathedral stands on the historic site of early Korean Catholic community activity, houses relics of persecuted martyrs, and has long been a spiritual and cultural landmark in Seoul."
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             content: "Poet Yun Dong-ju (1917–1945) is strongly associated with Korea’s colonial-era literature and identity, and the site commemorates that cultural memory. It connects a physical place in Seoul with modern Korean literary heritage shaped under occupation and wartime pressure."
         },
 
-        // --- GYEONGJU LOCATIONS (From Doc) ---
+        // --- GYEONGJU LOCATIONS ---
         "Gyeongju National Museum": {
             title: "Gyeongju National Museum",
             content: "The museum presents major artifacts from Silla, the ancient kingdom whose capital was Gyeongju. It functions as a key modern institution for understanding Silla culture, craftsmanship, and state history through preserved objects."
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
             content: "Hwangnam-ppang began in 1939 and became a signature regional pastry of Gyeongju. Today it’s treated as a recognizable “heritage food” that connects modern tourism with a product born during late-colonial era Korea."
         },
 
-        // --- BUSAN LOCATIONS (From Doc) ---
+        // --- BUSAN LOCATIONS ---
         "Haedong Yonggungsa Temple": {
             title: "Haedong Yonggungsa Temple",
             content: "Haedong Yonggungsa is traditionally said to have been founded in 1376 during the Goryeo period, and it stands out because it is a rare major temple built along the coast. Its setting reflects how Korean Buddhism adapted sacred space to nature and geography beyond mountains."
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
             content: "Gamcheon’s early identity is tied to refugee settlement during the Korean War, when people built homes on the hillside under extreme hardship. Since 2009, art and regeneration projects transformed it into a cultural tourism site, combining painful history with modern community-driven renewal."
         },
 
-        // --- JEONJU LOCATIONS (From Doc) ---
+        // --- JEONJU LOCATIONS ---
         "Gyeonggijeon Shrine": {
             title: "Gyeonggijeon Shrine",
             content: "Founded in 1410, Gyeonggijeon enshrines a portrait of King Taejo, founder of the Joseon Dynasty, connecting Jeonju to dynastic legitimacy and royal memory. It represents Joseon political ideology, Confucian rituals, and state heritage preservation."
@@ -108,10 +108,60 @@ document.addEventListener('DOMContentLoaded', function () {
         "Jaman Mural Village": {
             title: "Jaman Mural Village",
             content: "Jaman Mural Village is known for its painted walls and creative street atmosphere near key historic viewpoints in Jeonju. It represents modern urban culture layered onto an older historic environment, showing how tourism and local art reshape neighborhoods today."
+        },
+
+        // Kai's facts
+        "Gangneung": {
+            title: "Gangneung",
+            content: "Gangneung was founded during the early Silla period and is located at the east cost of Korea. While it doesn’t have much historic importance there were some events that happened. On 18th September 1996 a north Korean submarine ran aground and started a 49-day manhunt for the fleeing crew. Gangneung was also one of the places where the 2018 winter Olympics were held."
+        },
+        "Gwanghwamun Square": {
+            title: "Gwanghwamun Square",
+            content: "The Gwanghwamun Square is an area right in front of Gyeongbokgung Palace and is used since ancient times to host major events. Historically it was the location of royal administrative buildings. These days it’s a public space with two major memorials, one Statue honouring Admiral Yi Sun-Sin and the other paying tribute to King Sejong the Great."
+        },
+        "Namdaemun Market": {
+            title: "Namdaemun Market",
+            content: "Located right next to Namdaemun, the south gate of the old city, this market features a lot of household goods and traditional medicine. It was established in 1414 during the reign of King Taejong and was a series of government licensed shops that sold a wide variety of items. During the Japanese colonialisations, Namdaemun was forced to open up to also allow Japanese and Chinese merchants to sell wares where it was previously a market exclusive to Korean customers and merchants. During the Korea war it was burned down and destroyed several times but always reestablished itself with roughly the same size and status."
+        },
+        "Yonsei University": {
+            title: "Yonsei University",
+            content: "Yonsei University is one of the three most prestigious universities in Korea. Its current form established itself in January 1957 by merging the Yonhi College, also known as Chosun Christian College which was founded in April 1885 and Severance Hospital. The universitys campus features all kinds of college faculties and is like a small village with shops, cafes and other facilities being on campus."
+        },
+        "Bukchon Hanok Village": {
+            title: "Bukchon Hanok Village",
+            content: "Traditionally the residential quarters of high-ranking officials and nobility, this Hanok village is still a residential area today. During the Japanese colonial period, a Korean real estate company intentionally built hanok instead of Japanese style buildings to preserve the culture, despite the pressure of the colonial government. Since November 2024 tourist are only allowed to enter the village from 10 am to 5 pm to reduce the high volume of tourists."
+        },
+        "Insa-dong": {
+            title: "Insa-dong",
+            content: "Insa-dong was a residence area for government officials 500 years ago and originally compromised two towns, Gwanin-bang and Daesa-dong, whose last syllable, In and Sa, created the name. During the Japanese occupation the wealthy Koreans were forced to move out and sell their belongings, often antiques from which it got its identity. After the Korean war it became a centre for South Koreas artistic life and café culture. Today it’s a cultural shopping street with many antique shops and coffee houses."
+        },
+        "Gwangjang Market": {
+            title: "Gwangjang Market",
+            content: "Gwangjang Market was established in 1905 in protest to the seizure of Namdaemun Market by the Japanese colonial forces. A few investors purchased the land and opened Dongdaemun Market, the first market that was open every day of the week. It was later renamed to Gwangjang Market and is today still one of the oldest and largest Markets in Seoul."
+        },
+        "Seongsan Ilchulbong": {
+            title: "Seongsan Ilchulbong",
+            content: "This volcano is a major tourist attraction and considered one of Koreas most beautiful tourist sites. During the Japanese colonial period the Japanese dug caves into the side of the mountain and hid boats loaded with explosives. Nowadays those caves are registered cultural heritages."
+        },
+        "Songaksan": {
+            title: "Songaksan",
+            content: "Another volcanic mountain and also a vivid tourist site, this location too was occupied by Japanese forces and used as a stepping stone for the invasion of China during World War 2."
+        },
+        "COEX": {
+            title: "COEX",
+            content: "Also known as the “Starfield COEX Mall” it is the one of Koreas largest malls and the world’s largest underground mall with an area of about 173’000 square meters. It finished construction in April 2000 and features a large number of shops, food courts, a cinema, an aquarium and various other entertainment venues. Its most famous attraction is the Starfield Library, which stands in the centre of the mall."
+        },
+        "Hongdae": {
+            title: "Hongdae",
+            content: "Hongdae is an area that established itself around Hongik University, a prestigious private university. Thanks to cheap rent street artist stared to move in in the area and started the indie music schene. These days Hongdae is famous for being the social spot for young people. The culture there includes a big clubbing scene, lots of cafes and small restaurants, street food and beauty shops."
+        },
+        "Gangneung Jungang Market": {
+            title: "Gangneung Jungang Market",
+            content: "This market was registered as a permanent market in 1980 and provides fresh local products. Its similar in structure to Seoul’s Gwangjang market but smaller."
         }
     };
 
-    // 2. POPOVER INITIALIZATION (Simplified)
+    // 2. POPOVER INITIALIZATION 
     const termElements = document.querySelectorAll('.wiki-term');
 
     termElements.forEach(el => {
