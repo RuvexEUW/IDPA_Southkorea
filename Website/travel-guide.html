@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Guide | South Korea Guide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        :target {
+            scroll-margin-top: 100px;
+        }
+        .sidebar-link {
+            color: #555;
+            padding: 8px 0;
+            border-left: 2px solid transparent;
+            padding-left: 15px;
+            transition: all 0.3s;
+            display: block;
+            text-decoration: none;
+        }
+        .sidebar-link:hover {
+            color: #d63384;
+            border-left: 2px solid #d63384;
+            background-color: #f8f9fa;
+        }
+        /* Button styling for external links */
+        .btn-link-custom {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
@@ -26,45 +62,388 @@
                             <li><a class="dropdown-item" href="blog-3-week.html">3 Week Blog</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="travel-guide.html">Travel Guide</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="travel-guide.html">Travel Guide</a></li>
                     <li class="nav-item"><a class="nav-link" href="glossary.html">Glossary</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <main class="container py-5">
-        <h1 class="display-4 fw-bold mb-5 text-center">Practical Travel Guide</h1>
+        <h1 class="display-4 fw-bold mb-5 text-center">South Korea Travel Guide</h1>
         
         <div class="row g-5">
-            <div class="col-md-4">
-                <div class="list-group sticky-top" style="top: 100px;">
-                    <a href="#transport" class="list-group-item list-group-item-action">Transportation</a>
-                    <a href="#accommodation" class="list-group-item list-group-item-action">Accommodation</a>
-                    <a href="#food" class="list-group-item list-group-item-action">Food & Drink</a>
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="sticky-top" style="top: 100px;">
+                    <h5 class="mb-3 fw-bold ps-3">Jump to:</h5>
+                    <nav class="nav flex-column">
+                        <a href="#intro" class="sidebar-link">Introduction</a>
+                        <a href="#seoul" class="sidebar-link">Seoul</a>
+                        <a href="#busan" class="sidebar-link">Busan</a>
+                        <a href="#jeju" class="sidebar-link">Jeju-do</a>
+                        <a href="#gyeongju" class="sidebar-link">Gyeongju/Pohang</a>
+                        <a href="#festivals" class="sidebar-link">Festivals</a>
+                    </nav>
                 </div>
             </div>
 
-            <div class="col-md-8">
-                <section id="transport" class="mb-5">
-                    <h2 class="mb-3">Transportation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Practical information about the <span class="wiki-term" data-term="T-Money">T-Money</span> card and the KTX trains.</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <div class="col-lg-9">
+                
+                <div id="intro" class="mb-5">
+                    <p class="lead">South Korea is a fascinating destination where ancient traditions and ultra-modern city life exist side by side.</p>
+                    <p>From royal palaces and traditional markets to high-speed trains, neon streets, and world-leading technology, the country offers an experience that feels both deeply historic and futuristic at the same time.</p>
+                    <p>While South Korea is very safe and well organized, it does work a little differently from many Western countries. Knowing how to get around, which apps to use, and how daily life works will make your trip much smoother.</p>
+                </div>
+                <hr class="my-5 hr-thick">
+
+                <section id="maps" class="mb-5">
+                    <h3 class="mb-3 fw-bold">Maps & Navigation</h3>
+                    <p>Although Google Maps technically works in South Korea, <strong>it is not reliable for navigation</strong>. Due to local regulations, Google Maps often lacks accurate walking routes, public transport directions, and real-time updates.</p>
+                    <p>Instead use a combination of three apps:</p>
+                    <ul>
+                        <li>Naver Maps</li>
+                        <li>Kakao Maps</li>
+                        <li>Google Maps</li>
+                    </ul>
+                    <p>Download all three before arrival, and use whatever app suits the task the best.</p>
                 </section>
 
-                <section id="accommodation" class="mb-5">
-                    <h2 class="mb-3">Accommodation</h2>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="card bg-light border-0 p-4 mb-3">
-                        <h5>Hanok Stays</h5>
-                        <p class="mb-0">Stay in a traditional <span class="wiki-term" data-term="Hanok">Hanok</span> for an authentic experience. Lorem ipsum dolor sit amet.</p>
+                <section id="transport" class="mb-5">
+                    <h3 class="mb-3 fw-bold">Getting Around South Korea</h3>
+                    <p>South Korea has one of the best public transportation systems in the world.</p>
+                    
+                    <h5 class="fw-bold mt-4">Subways & Buses</h5>
+                    <ul>
+                        <li>Clean, safe, affordable, and easy to use</li>
+                        <li>English signage is available in major cities</li>
+                        <li>Subway stations often have elevators, lockers, and convenience stores</li>
+                    </ul>
+
+                    <h5 class="fw-bold mt-4">Trains (Intercity Travel)</h5>
+                    <ul>
+                        <li>KTX high-speed trains connect cities like Seoul, Busan, Gyeongju, and more</li>
+                        <li>Booking in advance is recommended during weekends and holidays</li>
+                    </ul>
+
+                    <h5 class="fw-bold mt-4">Taxis</h5>
+                    <ul>
+                        <li>Relatively affordable compared to many countries</li>
+                        <li>Kakao Taxi app makes ordering taxis easy without speaking Korean</li>
+                    </ul>
+
+                    <div class="card bg-light border-0 mt-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold">T-Money Card</h5>
+                            <p>The <strong>T-Money card</strong> is essential for getting around. You can use it for:</p>
+                            <ul>
+                                <li>Subways</li>
+                                <li>Buses</li>
+                                <li>Some taxis</li>
+                                <li>Convenience stores</li>
+                                <li>Lockers and vending machines</li>
+                            </ul>
+                            <p><strong>Where to buy it:</strong> Airports, Convenience stores (GS25, CU, 7-Eleven), Subway stations.</p>
+                            <p class="mb-0 text-danger fw-bold">Important: T-Money cards are usually cash-only when purchasing, so have some Korean won ready on arrival.</p>
+                        </div>
                     </div>
                 </section>
 
-                <section id="food" class="mb-5">
-                    <h2 class="mb-3">Food & Drink</h2>
-                    <p>Korean cuisine is diverse. From street food like tteokbokki to full meals like <span class="wiki-term" data-term="Bibimbap">Bibimbap</span>.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <section id="essentials" class="mb-5">
+                    <h3 class="mb-3 fw-bold">Travel Essentials</h3>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">SIM Cards</h5>
+                                    <p class="card-text small"><strong>Best Options:</strong></p>
+                                    <ul class="small">
+                                        <li><strong>eSIM</strong> – most convenient (activate before arrival)</li>
+                                        <li><strong>Physical SIM card</strong> – available at the airport</li>
+                                    </ul>
+                                    <p class="card-text small">The best overall Option is the eSIM. You’ll want mobile data for navigation apps, translation apps, ordering taxis, and restaurant searches.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Language</h5>
+                                    <p class="card-text small">Korean is the official language. English is <strong>not widely spoken</strong>, especially outside tourist areas. Younger people and hotel staff are more likely to understand basic English.</p>
+                                    <p class="card-text small">Use Google Translate for Signs, use the Camera translation and prepare some basic Korean Terms before arriving.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Payment</h5>
+                                    <p class="card-text small">Credit and debit cards are widely accepted.</p> 
+                                    <p class="card-text small">However, <strong>Cash is still needed</strong> for markets, street food, and small local shops.</p>
+                                    <p class="card-text small">Not all ATM accept foreign cards, but if you are in need for one, look at a convenience store.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Safety</h5>
+                                    <p class="card-text small">South Korea is considered <strong>one of the safest countries in the world</strong>. Violent crime is rare, pickpocketing is uncommon, and lost items are often returned.</p>
+                                    <p class="card-text small">But be cautious late at night, because you never know.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                             <div class="card h-100 border-0 shadow-sm bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">North Korea</h5>
+                                    <p class="card-text small">South Korea and North Korea remain technically at war, separated by the Demilitarized Zone. For travellers, this does not affect daily life or safety in South Korea. Life in South Korea is completely normal and secure. The DMZ can be visited safely on guided tours as a historical experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+
+                <hr class="my-5 hr-thick">
+
+                <section id="seoul" class="mb-5">
+                    <h2 class="mb-4 fw-bold text-danger">Seoul</h2>
+                    
+                    <div class="mb-4">
+                        <h4>Namsan Tower</h4>
+                        <p>This famous tower sits atop a hill and can either be reached with a cable car or hiking up the hill. After that you can take the elevator up the tower. With a hight of 236.7 meters it provides a unique panoramic view across Seoul. In the lounge up there, you can also find a café and the souvenir shop.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Gyeongbokgung Palace</h4>
+                        <p>The largest and best-preserved palace in Korea. It is a former royal palace back during the Joseon dynasty. Nowadays its one of the most famous tourist destinations in Korea. You can explore nearly the entire palace grounds and find historical remarks like in a museum all throughout the area. Its very popular to visit the landmark in the traditional Korean garments, the Hanbok.</p>
+                        <p>At 10 am and 14 pm daily happens the guard change ceremony, an event that takes around 20 min and showcases the traditional changing of the guard shifts.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Bukchon Hanok Village</h4>
+                        <p>An area in Seoul with houses built in the old, traditional style (Hanok). Originally, they housed the nobles and high-ranking officials. During the Japanese invasion, a Korean-owned real estate company preserved and built hanoks in protest to the Japanese colonial government.</p>
+                        <p>Today it is still a residential quarter but became very popular with tourist because it got featured in K-Drama and other media. It got to a point where the government had to introduce opening times because of the tourist masses. It is open from 10 am to 5 pm and residents ask visitors to respect their privacy, reduce noise levels and avoid littering.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Market</h4>
+                        <p>Seoul has quite a few markets but listed below are the 4 most famous:</p>
+                        <ul>
+                            <li><strong>Insadong:</strong> Is most famous for its tea shops, galleries and antique shops. It has one big main street with various alleys that branch off.</li>
+                            <li><strong>Myeongdong:</strong> Is known as the fashion center of Seoul with many international brands as well as Korean cosmetic brands having a shop there. It features many mid- to high-priced stores and is very popular among young people and tourists.</li>
+                            <li><strong>Namdaemun:</strong> Is a large traditional street market offering all sorts of household articles.</li>
+                            <li><strong>Gwangjang:</strong> Is one of the oldest market in Seoul. Its famous for its street food and local/traditional food shops. It is mainly an indoor market with the four main street aligned like a cross and alleys and stairs to another floor branching off.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Hongdae</h4>
+                        <p>This area of Seoul is particularly popular among the youth for its nightlife and clubbing culture. During the day it resembles a normal shopping district but during the evening and night it transforms into a bustling area full of street food and life. Most of the time there are also people performing street performances.</p>
+                    </div>
+                </section>
+
+                <section id="busan" class="mb-5">
+                    <h2 class="mb-4 fw-bold text-primary">Busan</h2>
+                    
+                    <div class="mb-4">
+                        <h4>Jagalchi Fish Market</h4>
+                        <p>This market is the most famous place in Busan for its unique style. It’s a big fish market where the vendors sell all kinds of fish, crabs, sea food, algae and other ocean related goods, dried and fresh.</p>
+                        <p>The specialty of the market is the multi-floored complex, where on the ground floor are many different stalls trying to sell live seafood. From that you can choose what you want and the sea food will immediately get prepared and cooked fresh in the corresponding restaurant on the first floor.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Busan Tower and Yongdusan Park</h4>
+                        <p>The busan tower and its surroundings are similar to the seoul tower area but just a bit smaller in scale. The tower also provides a good overview of Busan and the surrounding park is very nice to take a walk in.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Haeundae</h4>
+                        <p>The modern part of Busan famous for its beach and the Busan International Film Festival.</p>
+                    </div>
+                </section>
+
+                <section id="jeju" class="mb-5">
+                    <h2 class="mb-4 fw-bold text-success">Jeju-do</h2>
+                    
+                    <div class="mb-4">
+                        <h4>Manjanggul Lava Tubes</h4>
+                        <p>This destination is very popular amongst tourists. This volcanic cave is the 12th longest lava tube in the world and is considered to be one of the finest lava tube systems in the world. In the tube you can find various stalactites, stalagmites, lava columns and other volcanic formations.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Seongsan Ilchulbong, Mt Songaksan, Mt. Halla</h4>
+                        <p>Three famous volcanic mountains and very popular hiking destinations.</p>
+                        <ul>
+                            <li><strong>Seongsan Ilchulbong:</strong> Located at the very east coast of the island. It’s a 182 m tall crater that provides a wonderful viewpoint on top.</li>
+                            <li><strong>Mt Songaksan:</strong> Has a trail that leads around its crater rather than a climb up. This is a 3 km long path and is absolved rather easy and quick. Nonetheless it has some beautiful views and worth a stop if you’re in the area.</li>
+                            <li><strong>Mt Halla:</strong> The grand mountain located in the middle of the island in the Hallasan National Park and is the highest mountain in all South Korea with a hight of 1947 m. In the area are 7 trails, reaching from 1.3 till 9.6 km with the longest taking about 4.5 h.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Cheonjiyeon Falls</h4>
+                        <p>Those are a series of waterfalls located in the area of Seogwipo. There is a trail leading along the river and waterfalls providing the perfect spots for photos. During the night the falls are illuminated.</p>
+                    </div>
+                </section>
+
+                <section id="gyeongju" class="mb-5">
+                    <h2 class="mb-4 fw-bold text-warning">Gyeongju / Pohang</h2>
+                    
+                    <div class="mb-4">
+                        <h4>Gyeongju National Museum</h4>
+                        <p>The museum portrays the Silla dynasty history and culture, where visitors can behold a large variety of relics. It is built adjacent to the royal tomb complex. The entry is free for the permanent exhibitions and worth a visit for people with an interest in history and culture.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Woljeonggyo Bridge</h4>
+                        <p>A historical covered bridge that was originally built around 760 A.D. and was lost during the Joseon Period. It was rebuilt in its original form during two phases from 2008 to 2013, constructing the bridge, and 2016-2018, construction of the towers. It is open to the public and considered especially scenic during night-time where the bridge gets illuminated.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Cheomseongdae Observatory</h4>
+                        <p>This is the oldest surviving astronomical observatory in Asia and possibly the whole world. It is mentioned in the popular Korean drama “Queen Seondeok”.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Seokguram Grotto</h4>
+                        <p>This grotto is located 750 m above sea level and contains some of the best buddhist sculpures in the world. Is is one of the most popular cultural destinations in Korea and very known for viewing the sunrise from the seated buddhas perch.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Donggung Palace and Wolji Pond</h4>
+                        <p>Once part of the palace complex of ancient Silla, it is now a popular tourist destination to look at the traditional palace and temple structures. Some of the buildings were restored while others kept their natural form.</p>
+                    </div>
+                </section>
+
+                <hr class="my-5 hr-thick">
+
+                <section id="festivals" class="mb-5">
+                    <h2 class="mb-4 fw-bold">Festivals</h2>
+                    
+                    <h4 class="mt-4 mb-3 text-secondary">Major Cultural & Seasonal Festivals</h4>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Seollal (Korean Lunar New Year)</h5>
+                                    <p class="small text-muted">Late January or February</p>
+                                    <p class="card-text">One of Korea’s biggest traditional holidays. Seollal involves family gatherings, wearing hanbok, traditional games, and eating tteokguk (rice cake soup).</p>
+                                    <a href="https://www.90daykorean.com/korean-lunar-new-year/" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Lotus Lantern Festival</h5>
+                                    <p class="small text-muted">April–May</p>
+                                    <p class="card-text">Celebrates Buddha’s Birthday, lighting up cities with thousands of colorful lanterns. The grand lantern parade through central Seoul is the highlight.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=222228" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Jinhae Cherry Blossom Festival</h5>
+                                    <p class="small text-muted">Early–mid April</p>
+                                    <p class="card-text">One of Korea’s most famous cherry blossom festivals, transforming the town of Jinhae into a sea of pink blossoms with parades, concerts, and street food.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=124524" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Hwacheon Sancheoneo Ice Festival</h5>
+                                    <p class="small text-muted">January</p>
+                                    <p class="card-text">A winter wonderland at Hwacheon, famous for ice fishing for trout, ice sledding, snow sculptures and outdoor fun in sub-zero conditions.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=96732" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Jeju Fire Festival</h5>
+                                    <p class="small text-muted">March</p>
+                                    <p class="card-text">A spring torch-lighting festival on Jeju Island symbolizing agricultural renewal and warding off bad luck. Huge bonfires light the fields and skies.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=96364" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-5 mb-3 text-secondary">Unique Regional & Themed Festivals</h4>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Boryeong Mud Festival</h5>
+                                    <p class="small text-muted">July</p>
+                                    <p class="card-text">One of Korea’s most famous fun festivals at Daecheon Beach where people enjoy mud pits, slides, body paint, music and beach parties.</p>
+                                    <a href="https://www.mudfestival.or.kr/en/festival/main.html" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Jinju Namgang Yudeung Festival</h5>
+                                    <p class="small text-muted">Early October</p>
+                                    <p class="card-text">A lantern festival where tens of thousands of lanterns float down the Namgang River at night.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=96362" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Andong Maskdance Festival</h5>
+                                    <p class="small text-muted">September</p>
+                                    <p class="card-text">Celebrates traditional Korean mask dances, especially the famous Hahoe folk performance, with cultural shows, street parades, and global dance groups.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=96388" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Jeonju Bibimbap Festival</h5>
+                                    <p class="small text-muted">October</p>
+                                    <p class="card-text">A food-lovers’ festival centered around Korea’s beloved bibimbap dish, with cooking events, tasting sessions, folk games, and markets.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=90014" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Gwangju World Kimchi Festival</h5>
+                                    <p class="small text-muted">Early November</p>
+                                    <p class="card-text">Celebrating Korea’s famous fermented food kimchi with making experiences, tastings, and cultural activities.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=198450" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Damyang Bamboo & Yeoju Ceramic</h5>
+                                    <p class="small text-muted">Summer / Autumn</p>
+                                    <p class="card-text">Showcase Korea’s natural beauty and craftsmanship — bamboo forest tours and bamboo art in Damyang, and premium ceramic exhibitions in Yeoju.</p>
+                                    <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=103849" target="_blank" class="btn btn-dark btn-sm btn-link-custom">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
     </main>
